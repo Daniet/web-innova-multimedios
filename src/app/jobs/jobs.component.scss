@@ -1,0 +1,33 @@
+#description-products{
+  transition: 1s;
+  position: fixed;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+}
+
+.description-products-hidden{
+  left: -50%;
+}
+
+.description-products-show{
+  left: 0%;
+}
+
+#list-products{
+  transition: 1s;
+  position: fixed;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+  background: #0ff;
+}
+
+.list-products-hidden{
+  left: 100%;
+}
+
+.list-products-show{
+  left: 50%;
+}

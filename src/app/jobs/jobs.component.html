@@ -1,21 +1,17 @@
-<!-- <div class="nav nav-preview">
-  <a (click)="menuHide()">
-    Cerrar
-  </a>
+<div id="description-products" class="description-products-hidden">
+  <h4>
+    {{ hoverProduct.name }}
+  </h4>
+  <p>
+    {{ hoverProduct.description }}
+  </p>
 </div>
-<nav>
-  <a (click)=menuShow()>
-    Ver productos
-  </a>
-</nav>
-<div class="nav nav-item">
-  <div class="menu-item">
-    <ul>
-      <li *ngFor="let item of menu" (mouseover)="preview(item)">
-        <a (click)="menuHide()">
-          {{ item.name }}
-        </a>  
-      </li>
-    </ul>
-  </div>
-</div> -->
+<div id="list-products" class="list-products-hidden">
+  <ul>
+    <li *ngFor="let x of products" (mouseover)="preview(x)">
+      <a>
+        {{ x.name }}
+      </a>
+    </li>
+  </ul>
+</div>

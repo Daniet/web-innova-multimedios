@@ -1,17 +1,26 @@
 <div class="page">
-  <div class="menu grid">
-    <div class="cl1"></div>
-    <div class="description cl4 center-v hide-on-small-only">
-      <h5 class="center-align">
-        Bla bla bla
-      </h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-      </p>
+  <div class="menu">
+    <div class="description hide-on-small-only row">
+      <div class="right-align">
+        <a (click)="menuhidden()">
+          cerrar
+        </a>
+      </div>
+      <div class="col m6">
+        <h5 class="center-align">
+          Bla bla bla
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+      </div>
     </div>
-    <div class="cl1"></div>
-    <div class="cl6">
-      djsonsdsf  fsdfhi ofh fsidhfs oi
+    <div id="nav-page" class="center-align col m6">
+      <ul>
+        <li *ngFor="let x of menuItem">
+          {{ x.name }}
+        </li>
+      </ul>
     </div>
   </div>
   <div class="content">

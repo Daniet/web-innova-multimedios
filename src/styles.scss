@@ -1,47 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
-$col: 12;
-
+// /* You can add global styles to this file, and also import other style files */
+// $col: 12;
+//
 a{
   cursor: pointer;
-}
-
-h1, h2, h3, h4, h5, h6{
-  width: 100%;
-}
-
-.center-v{
-  align-self: center;
-}
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat($col, 1fr);
-  grid-gap: 5px;
 }
 
 p{
   text-align: justify;
 }
-
-@for $i from 1 through $col{
-  .cs#{$i}{
-    grid-column: span $i;
-  }
-}
-
-@media only screen and (min-width: 768px){
-  @for $i from 1 through $col{
-    .cl#{$i}{
-      grid-column: span $i;
-    }
-  }
-}
-
-
-@media only screen and (min-width: 600px){
-  @for $i from 1 through $col{
-    .cm#{$i}{
-      grid-column: span $i;
-    }
-  }
-}
+//
+// h1, h2, h3, h4, h5, h6{
+//   width: 100%;
+// }
+//
+// svg{
+//   width: 800px;
+//   height: 800px;
+//   min-width: 100%;
+// }
+//
+// .center-v{
+//   align-self: center;
+// }
+//
+// .grid{
+//   display: grid;
+//   grid-template-columns: repeat($col, 1fr);
+//   grid-gap: 5px;
+// }
+//
+// @for $i from 1 through $col{
+//   .cs#{$i}{
+//     grid-column: span $i;
+//   }
+// }
+//
+// @media only screen and (min-width: 768px){
+//   @for $i from 1 through $col{
+//     .cl#{$i}{
+//       grid-column: span $i;
+//     }
+//   }
+// }
+//
+//
+// @media only screen and (min-width: 600px){
+//   @for $i from 1 through $col{
+//     .cm#{$i}{
+//       grid-column: span $i;
+//     }
+//   }
+// }
